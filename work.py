@@ -11,12 +11,11 @@ with session.get(url) as r:
     paragraph = r.html.find(selector, first=False)
 
     text = " ".join([ p.text for p in paragraph])
-print(text)
+#print(text)
 
-qe= main.BoolQGen()
+qe= main.QGen()
 payload = {
             "input_text":text
         }
-output = qe.predict_boolq(payload)
+output = qe.predict_shortq(payload)
 pprint (output)
-
