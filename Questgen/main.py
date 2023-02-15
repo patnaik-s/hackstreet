@@ -46,7 +46,7 @@ class QGen:
         self.model = model
         self.nlp = spacy.load('en_core_web_sm')
 
-        self.s2v = Sense2Vec().from_disk('s2v_old')
+        self.s2v = Sense2Vec().from_disk(r'Questgen\s2v_old')
 
         self.fdist = FreqDist(brown.words())
         self.normalized_levenshtein = NormalizedLevenshtein()
@@ -105,7 +105,7 @@ class QGen:
     def predict_shortq(self, payload):
         inp = {
             "input_text": payload.get("input_text"),
-            "max_questions": payload.get("max_questions", 4)
+            "max_questions": payload.get("max_questions", 20)
         }
 
         text = inp['input_text']

@@ -1,0 +1,229 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   }
+   header svg {
+    float:left;
+    height: 80px;
+    width: 200px;
+   }
+   div svg{
+        height: 90px;
+        width: 200px;
+        padding-left: 20px;
+   }
+   .header{
+    background-color: white;
+    border-bottom:2px solid #1e4fa1;
+    position: fixed;
+    width: 100vw;
+   }
+   .link{
+    float: right;
+   }
+   .btn{
+    padding: 15px;
+    border-radius: 0px solid;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px ;
+    background-color: blue;
+    color: aliceblue;
+    height: 20px;
+    width: 200px;
+   }
+   ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-right: 30px;
+   }
+   ul li a{
+        text-decoration: none;
+   }
+   ul li a:hover{
+        color:red;
+        text-decoration: underline;
+   }
+   .front{
+    height: 55vh;
+    width: 100vw;
+    background-color: rgb(95, 26, 95);
+    text-align: center;
+
+   }
+   #honefront{
+    color: white;
+    padding-top: 150px;
+    font-size: 5vw;
+   }
+   .search{
+    margin-top: 20px;
+    border-radius: 50px;
+    height: 50px;
+    border: 0px solid white;
+    width: 60vw;
+    padding-left: 30px;
+    font-size: 20px;
+   }
+   .submit{
+        margin-left: -90px;
+        color:rgb(114, 42, 107);
+        font-size:19px;
+        background-color: rgb(208, 195, 206);
+        padding: 15px;
+        border: 0px;
+        border-radius: 50%;            
+        border-radius: 0px solid;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px ;
+        cursor: pointer;
+   }
+   .questions{
+    width: 80vw;
+    margin: auto;
+    background-color: rgb(220, 201, 246);
+    margin-top: 20px;
+    border-radius: 0px solid;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px ;
+    text-align: center;
+    
+   }
+   .questions2{
+    width: 80vw;
+    margin: auto;
+    background-color:burlywood;
+    margin-top: 20px;
+    border-radius: 0px solid;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px ;
+    text-align: center;
+   }
+   #AI{
+     font-family:Arial, Helvetica, sans-serif;
+     color: blue;
+     margin-top: 10px;
+   }
+    p{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+        text-align: justify;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+   }
+    h2{
+    padding: 15px;
+    font-family: 'Roboto Slab', serif;
+        font-size: 21px;
+   }
+   .footer{
+        margin-top: 30px;
+        background-color: rgb(3, 3, 84);
+   }
+   .footer img{
+        float: left;
+        height: 20px;
+        width: 20px;
+        padding-right: 15px;
+    }
+    .footer1{
+        height:40vh;
+    }
+   .footer2{
+        float: clear;
+        color: white;
+        padding: 10px;
+        background-color:rgb(11, 20, 152);
+        height: 5vh;
+   }
+   .footer2 address{
+            margin-left: -1100px;
+            padding-right: 40px;
+            float: left;
+   }
+   .footer2 p{
+    float: left;
+    margin-left: -500px;
+   }
+   .icons{
+    float: right;
+    margin-left: -500px;
+   }
+   .footerli{
+    display: block;
+    line-height: 5px;
+    padding: 0px;
+    margin: 20px;
+    color: white;
+   }
+   .footerul{
+    padding: 60px;
+    padding-top: 20px;
+    float: left;
+   }
+   .enhance{
+    font-size: 23px;
+    font-weight: bolder;
+    color:rgb(185, 152, 44);
+    padding-bottom: 20px;
+   }
+   .main{
+        min-height: 70vh;
+   }
+   .onecard{
+    text-align: center;
+       border-top-right-radius: 30px;
+       border-top-left-radius: 30px;
+       float: left;
+       margin:60px ;
+       margin-left:100px;
+       height: 45vh;
+       width: 20vw;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+       border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+   }
+   .onecard img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom:5px solid blue; ;
+    height: 30vh;
+    width: 20vw;
+   }
+   .onecard h4{
+        margin: 10px;
+        margin-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
+   }
+   .onecard a{
+        margin: 15px;
+        text-decoration: none;
+        color: aliceblue;
+        padding: 10px;
+        background-color: #5c2d90;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+   }
+   .card h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 50px;
+   }
+   .index{
+    margin-top: -110px;
+   }

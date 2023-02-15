@@ -193,8 +193,8 @@ args_dict = dict(
     seed=42,
 )
 
-train_path = r"C:\Users\bisha\OneDrive\Desktop\Questgen.ai\Questgen\train\boolq_train.csv"
-val_path = r"C:\Users\bisha\OneDrive\Desktop\Questgen.ai\Questgen\train\boolq_val.csv"
+train_path = "boolq_data/boolq_train.csv"
+val_path = "boolq_data/boolq_val.csv"
 
 train = pd.read_csv(train_path)
 print (train.head())

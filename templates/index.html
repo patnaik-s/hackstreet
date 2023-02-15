@@ -1,0 +1,38 @@
+        {% extends 'base.html' %}
+
+        {% block title %}
+        FAQ-Section
+        {% endblock title %}
+        
+        {% block main %}    
+            {% if start==None %}
+            <div class="card">
+                <h1>Frequently Seen Pages</h1>
+                <div class="onecard">
+                    <img src="{{url_for('static',filename='/Images/high-blood-pressure-hypertension-symptoms_thumb-732x549.webp')}}" alt="TestTube" >
+                    <h4>Blood Pressure: All you Need to Know</h4>
+                    <a href="/blog/https://www.bajajfinservhealth.in/articles/ayurvedic-medicine-for-high-bp" target="_blank" rel="noopener noreferrer">See Page</a>
+                </div>
+                <div class="onecard">
+                    <img src="{{url_for('static',filename='/Images/8.webp')}}" alt="TestTube" >
+                    <h4>HbA1c Normal Range: How to Scan for Diabetes with HbA1c Test</h4>
+                    <a href="/blog/https://www.bajajfinservhealth.in/articles/hba1c-normal-range" target="_blank" rel="noopener noreferrer">See Page</a>
+                </div>
+                <div class="onecard">
+                    <img src="{{url_for('static',filename='/Images/4.webp')}}" alt="TestTube" >
+                    <h4>How to Lose Weight Without Exercise: 9 Top Way</h4>
+                    <a href="/blog/https://www.bajajfinservhealth.in/articles/how-to-lose-weight-without-exercise" target="_blank" rel="noopener noreferrer">See Page</a>
+                </div>
+                
+            </div>
+            {% else %}
+                {% for j in result %}
+                <div class="questions">
+                    <h2>{{ j['Question'] }}</h3>
+                    <p>{{j['context']}}</p><br>
+                    <b><h4>AI Genearated Result :</h4></b>
+                    <p id="AI">{{j['WebSearcher']}}</p>
+                </div>
+                {% endfor %}
+            {% endif %}       
+    {% endblock main %}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            
+        {% endblock title %}
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='Css/style.css')}}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+        <a href="/"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" x="0" y="0" style="enable-background:new 0 0 300 300" xml:space="preserve" viewBox="115 256.3 370 87.4" data-testid="bajaj-logo" class="css-kar6f9 "><style>.st0{fill:#5c2d90}</style><path class="st0" d="M258.6 294.7h-22.7v-25h-15v61.8h15v-24.6h22.7v24.6h14.9v-61.8h-14.9zM322.8 296.1c-1.5-4.3-3.8-7.5-7-9.7-3.2-2.2-7.4-3.3-12.6-3.3-7.5 0-13.3 2.2-17.4 6.7-4 4.5-6.1 10.8-6.1 18.9 0 5 1 9.3 3 12.9 2 3.6 4.8 6.4 8.4 8.3 3.6 1.9 7.8 2.9 12.5 2.9 3.6 0 6.8-.3 9.6-.9 2.7-.6 5.2-1.3 7.5-2.3v-11.9c-1.1.4-2.3.9-3.8 1.5s-3.1 1-4.8 1.4c-1.7.4-3.4.6-5.1.6-4.7 0-8.1-1.2-10.2-3.6-1.4-1.6-2.3-3.6-2.8-6.1h30.9c.1-6-.6-11.2-2.1-15.4zm-24.8-1.2c1.4-.9 2.9-1.3 4.7-1.3 3.1 0 5.3 1 6.7 3.1.9 1.4 1.5 3.5 1.9 6.2H294c.2-1.4.5-2.6.9-3.7.7-2 1.7-3.5 3.1-4.3zM368.4 287.8c-1.5-1.2-3.2-2.2-5-2.8-1.8-.6-3.6-1.1-5.4-1.3-1.8-.2-3.4-.4-4.9-.4-4.2 0-8 .4-11.3 1.3-3.4.9-5.9 1.8-7.5 2.8v12.2c1.7-1.4 4-2.5 6.7-3.5s5.5-1.4 8.2-1.4c3.3 0 5.9.6 7.7 1.9 1.8 1.3 2.7 3.3 2.7 6.2v3c-.4-.3-.9-.5-1.4-.8-1.6-.7-3.4-1.3-5.3-1.8-2-.4-4-.6-6.1-.6-3.8 0-6.9.6-9.4 1.8-2.5 1.2-4.3 2.8-5.5 5-1.2 2.2-1.8 4.7-1.8 7.6 0 3.1.5 5.7 1.6 7.7 1 2.1 2.5 3.7 4.4 4.9 1.9 1.2 4.1 2.1 6.6 2.6s5.2.8 8 .8c4.8 0 8.8-.4 12.2-1.1 3.4-.7 5.9-1.9 7.7-3.6 1.8-1.6 2.7-3.8 2.7-6.4l.1-22.1c0-2.8-.5-5.2-1.4-7.1-.8-2.1-2.1-3.7-3.6-4.9zm-10.5 34.7c-1.3.4-3.5.6-6.6.6-1.2 0-2.4-.2-3.6-.7-1.1-.5-2.1-1.2-2.7-2.1-.7-.9-1-2-1-3.1 0-1.9.7-3.3 2.1-4.2 1.4-.9 3.6-1.3 6.6-1.3 2 0 3.8.2 5.6.6.6.1 1.1.3 1.6.5v7.2c-.1 1.2-.8 2.1-2 2.5zM382 266.9h13.7v64.6H382zM423.6 271.7h-14.5v12.9h-6.9v10.6h6.9v23.4c0 4.7 1.3 8.3 4 10.9 2.7 2.6 6.7 3.8 12.1 3.8 1.4 0 2.9-.1 4.4-.4 1.5-.3 2.9-.8 4.2-1.4v-11.9c-.7.6-1.7 1-2.8 1.4-1.1.4-2.1.6-3.1.6-1.6 0-2.7-.4-3.4-1.2-.7-.8-1-2-1-3.6v-21.7h10.3v-10.6h-10.3v-12.8zM482.8 290.4c-1.5-2.5-3.5-4.3-6.1-5.4-2.6-1.1-5.6-1.7-9-1.7-3.5 0-7 .7-10.3 2.1-1 .4-2 .9-2.9 1.4v-20.7h-13.9v65.4h13.7l.2-34.6c.8-.6 1.9-1.1 3.4-1.5 1.5-.4 2.9-.6 4.4-.6 2.9 0 5.1.7 6.6 2.1 1.5 1.4 2.3 3.6 2.3 6.7v27.9H485v-30.8c0-4.4-.7-7.8-2.2-10.3z"></path><path d="M158.7 256.3c-24.2 0-43.7 19.6-43.7 43.7 0 24.2 19.6 43.7 43.7 43.7s43.7-19.6 43.7-43.7c.1-24.2-19.5-43.7-43.7-43.7zm21 45.2c2.8 1.4 5 3.3 5.8 6.4 1.4 5 .2 11.3-7.1 14.2-2.8 1.1-5.8 1.8-8.8 1.9-4.8.2-9.6.2-14.5.3h-.3v-10.7h16.8v-8.2h-16.8v-11.1h18.5v-8.7h-28.5v38.6h-10.9v-48.6H164.8c4.6 0 9.1.5 13.4 2.2 2 .8 3.7 1.9 5.1 3.5 3.3 3.7 4 10.8-1.8 15.3-1.7 1.3-3.6 2.2-5.6 2.9-.1 0-.2.1-.4.1l-.1.1c1.6.6 3 1.1 4.3 1.8z" style="fill:#1e4fa1"></path></svg></a>
+        <div class="link">
+            <ul>
+                <li><a href="https://qqx1g.app.link/webStoreB">GET HEALTH APP</a></li>
+                <li><a href="https://www.bajajfinservhealth.in/doctor-registration">For Doctors</a></li>
+                <li>|</li>
+                <li><a class="btn" href="#">Login/SignUp</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="front">
+        <h1 id="honefront" >Frequently Asked Questions</h1>
+        <form action="/" method="post">
+            <br>
+            <input class="search" type="url" id="fname" name="url" placeholder="Enter Page URL"  autocomplete="off" required>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+    <div class="main">
+        {% block main %}
+            
+        {% endblock main %}
+    </div>
+    <div class="footer">
+        <div class="footer1">
+                <div class="column">
+                    <ul class="footerul">
+                        <li class="footerli enhance">Bajaj Finserv Health Ltd.</li> 
+                        <li class="footerli">About us</li>
+                        <li class="footerli">Customer service</li>
+                        <li class="footerli">Contact us</li>
+                        <li class="footerli">Become a partner</li>
+                        <li class="footerli">Privacy policy</li>
+                        <li class="footerli">Terms & Conditions</li>
+                        <li class="footerli">Financial report</li>
+                    </ul>
+                    <ul class="footerul">
+                        <li class="footerli enhance">Health Library</li>
+                        <li class="footerli">Health Articles</li>
+                    </ul>
+                    <ul class="footerul">
+                        <li class="footerli enhance">Health Card</li>
+                        <li class="footerli">Health EMI Card</li>
+                        <li class="footerli">Ruby Health Clinic Card</li>
+                    </ul>
+                    <ul class="footerul index">
+                        <li class="footerli enhance">CIN</li>
+                        <li class="footerli">U85320PN2019PLC185286</li>
+                        <li class="footerli">Registered Office</li>
+                        <li class="footerli">Bajaj Auto Limited Complex, Mumbai - Pune Road, Akurdi, Pune - 411 035</li>
+                        <li class="footerli">Corporate Address</li>
+                        <li class="footerli">Mantri IT Park, A wing,3rd floor, Nagar Road,Viman Nagar, Pune, Maharashtra - 411 014</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="footer2">
+            <address>© 2023, Bajaj Finserv Health Limited. All rights reserved.</address>
+            <img src="{{url_for('static',filename='/Images/telephone-svgrepo-com.svg')}}" alt="telephone">
+          
+            <img src="{{url_for('static',filename='/Images/email-svgrepo-com.svg')}}">
+            <p>customercare@bajajfinservhealth.in</p>
+            <img class=".icons" src="{{url_for('static',filename='/Images/instagram-svgrepo-com.svg')}}">
+            <img class=".icons" src="{{url_for('static',filename='/Images/linkedin-rounded-border-svgrepo-com.svg')}}">
+            <img class=".icons" src="{{url_for('static',filename='/Images/twitter-bird-svgrepo-com.svg')}}">
+        </div>
+    </div>
+    </div>
+</body>
+</html>
