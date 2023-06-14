@@ -1,0 +1,278 @@
+:root {
+  --fontcolor: white;
+  --backgroundcolor: blue;
+  -fontsize: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+
+header {
+  background-color: var(--fontcolor);
+  border-bottom: 2px solid #1e4fa1;
+  position: fixed;
+  width: 100vw;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+header > div > a > svg {
+  display: inline-block;
+  width: 12rem;
+}
+
+header > .nav-bar > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hamberger {
+  display: none;
+}
+.hamberger > .lines {
+  cursor: pointer;
+  background-color: rgb(95, 26, 95);
+  display: block;
+  height: 4px;
+  width: 20px;
+  margin: 5px;
+}
+.btn {
+  padding: 15px;
+  border-radius: 0px solid;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: blue;
+  color: aliceblue;
+  height: 20px;
+  width: 200px;
+}
+ul li {
+  list-style: none;
+  margin-right: 25px;
+}
+ul li a {
+  text-decoration: none;
+}
+ul li a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+.front {
+  height: 55vh;
+  width: 100%;
+  background-color: rgb(95, 26, 95);
+  text-align: center;
+}
+#honefront {
+  color: white;
+  padding-top: 160px;
+  font-size: 5vw;
+}
+.search {
+  margin-top: 20px;
+  border-radius: 50px;
+  height: 50px;
+  border: 0px solid white;
+  width: 60vw;
+  padding-left: 30px;
+  font-size: 20px;
+}
+.submit {
+  margin-left: -90px;
+  color: rgb(114, 42, 107);
+  font-size: 19px;
+  background-color: rgb(208, 195, 206);
+  padding: 15px;
+  border: 0px;
+  border-radius: 50%;
+  border-radius: 0px solid;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  cursor: pointer;
+}
+.content{
+  height: 60vh;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-top:20px;
+}
+body> h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 4vw;
+}
+
+.onecard {
+  text-align: center;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 340px;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  margin: 10px;
+}
+.onecard img {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom: 5px solid blue;
+  height: 30vh;
+  width: 300px;
+}
+.onecard h4 {
+  margin: 5px;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", sans-serif;
+}
+.onecard a {
+  margin: 15px;
+  text-decoration: none;
+  color: aliceblue;
+  padding: 10px;
+  background-color: #5c2d90;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.questions{
+  padding: 20px;
+  width: 80vw;
+  margin: auto;
+  background-color: rgb(220, 201, 246);
+  margin-top: 20px;
+  border-radius: 0px solid;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px ;
+  text-align: center;
+  
+ }
+ .questions2{
+  padding: 20px;
+  width: 80vw;
+  margin: auto;
+  background-color:burlywood;
+  margin-top: 20px;
+  border-radius: 0px solid;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px ;
+  text-align: center;
+ }
+
+ div>h2,div>b>h4{
+   margin-bottom:10px;
+ }
+ div>p#AI{
+    color: blue;
+ }
+
+@media screen and (max-width: 750px) {
+  .division-li {
+    display: none;
+  }
+  header {
+    background-color: var(--fontcolor);
+    border-bottom: 2px solid #1e4fa1;
+    position: fixed;
+    width: 100vw;
+    height: 90px;
+    align-items: flex-start;
+    padding: 20px 30px;
+    overflow: hidden;
+  }
+
+  .hamberger {
+    display: block;
+  }
+  header > .nav-bar > ul {
+    flex-direction: column;
+  }
+  .nav-bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+  }
+  header > .nav-bar > ul > li {
+    margin: 15px;
+  }
+  .header.active {
+    height: 250px;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  #honefront {
+    font-size: 2rem;
+  }
+  .search {
+    border-radius: 50px;
+    width: 80vw;
+    padding-left: 30px;
+    font-size: 1.2rem;
+  }
+
+  body> h1 {
+    font-size: 2rem;
+  }
+
+  .card{
+    flex-direction: column;
+    flex-wrap: wrap;
+
+  }
+  
+  .onecard {
+    margin: 40px auto;
+    height: 370px;
+  }
+
+  #honefront {
+    padding-top: 180px;
+
+  }
+  .search {
+    height: 70px;
+
+  }
+  .submit {
+    padding: 25px;
+
+  }
+
+  .front {
+    height: 45vh;
+  }
+}

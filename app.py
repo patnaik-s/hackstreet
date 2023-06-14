@@ -1,5 +1,5 @@
 from flask import *
-
+import os
 from pprint import pprint
 import nltk
 nltk.download('stopwords')
@@ -11,8 +11,13 @@ from sense2vec import Sense2VecComponent,Sense2Vec
 from pathlib import Path
 import openai
 
+from dotenv import load_dotenv
+load_dotenv()
+
+
+
 """Open AI"""
-openai.api_key = "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"
+openai.api_key = os.getenv('API_OPENAI')
 def WebSearcher(query):
     model_engine = "text-davinci-003"
     # Generate a response
@@ -55,8 +60,8 @@ def hello_world():
         url=request.form.get('url')
         res=shortQ(url)['questions']
         for i in res:
-            webRes=WebSearcher(i['Question'])
-            i["WebSearcher"]=webRes
+            # webRes=WebSearcher(i['Question'])
+            i["WebSearcher"]="API Limit Has been Reached"
 
         return render_template("index.html",result=res,start='okay')
     
@@ -67,8 +72,8 @@ def hello_world():
 def show(url):
     res=shortQ(url)['questions']
     for i in res:
-        webRes=WebSearcher(i['Question'])
-        i["WebSearcher"]=webRes
+        # webRes=WebSearcher(i['Question'])
+        i["WebSearcher"]="API Limit Has been Reached"
 
     return render_template("index.html",result=res,start='okay')
 
@@ -77,8 +82,8 @@ def show(url):
 def api(url):
     output =shortQ(url)['questions']
     for i in output:
-        webRes=WebSearcher(i['Question'])
-        i["WebSearcher"]=webRes
+        # webRes=WebSearcher(i['Question'])
+        i["WebSearcher"]="API Limit Has been Reached"
 
     return jsonify(output)
 
